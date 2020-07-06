@@ -5,23 +5,18 @@ For a quick deployment of ethereum in kubernets you will need an ethereum wallet
     Address:     0xab70383d9207c6cc43ab85eeef9db4d33a8ad4e8
     
 quick deployment instructions of ethereum with kubernetes:
-
-    ```console
-    helm repo add stable https://kubernetes-charts.storage.googleapis.com
-    
-
-    $ helm install --name my-eth-release stable/ethereum
+    $helm repo add stable https://kubernetes-charts.storage.googleapis.com
+    $helm install --name my-eth-release stable/ethereum
         --set geth.account.address=0xab70383d9207c6cc43ab85eeef9db4d33a8ad4e8
         --set geth.account.privateKey=38000e15ca07309cc2d0b30faaaadb293c45ea222a117e9e9c6a2a9872bb3bcf
         --set geth.account.secret=demo
-    ```
+
 
    (Optional) - To expose the port and the geth RPC service a load balancer service has to be created within the kubernetes deployment. An example yaml file is given            (ethereum-geth-tx-loadbalancer.yaml) and can be applied to expose the RPC service. To apply it, run: 
-    ```console
+   
     
-    kubectl apply -f ethereum-geth-tx-loadbalancer.yaml
-    ```
-
+    $kubectl apply -f ethereum-geth-tx-loadbalancer.yaml
+    
 
 # ethereum
 
