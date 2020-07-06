@@ -1,0 +1,29 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: ethereum-geth-tx-loadbalancer
+  labels:
+    app: ethereum
+    app.kubernetes.io/managed-by: Helm
+    chart: ethereum-1.0.0
+    component: geth-tx
+    heritage: Helm
+    release: ethereum-1593702552
+  annotations:
+    meta.helm.sh/release-name: ethereum-1593702552
+    meta.helm.sh/release-namespace: default
+spec:
+  ports:
+    - name: rpc
+      protocol: TCP
+      port: 8545
+      targetPort: 8545
+    - name: ws
+      protocol: TCP
+      port: 8546
+      targetPort: 8546
+  selector:
+    app: ethereum
+    component: geth-tx
+    release: ethereum-1593702552
+  type: LoadBalancer
