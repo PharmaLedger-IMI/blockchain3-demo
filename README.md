@@ -60,8 +60,7 @@ $ helm repo add stable https://kubernetes-charts.storage.googleapis.com
     * `geth.account.secret` = any passphrase that Geth will use to encrypt your private key
     
     ```console
-    e.g.
-    
+
     $ helm install --name my-eth-release stable/ethereum
         --set geth.account.address=0xab70383d9207c6cc43ab85eeef9db4d33a8ad4e8
         --set geth.account.privateKey=38000e15ca07309cc2d0b30faaaadb293c45ea222a117e9e9c6a2a9872bb3bcf
