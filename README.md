@@ -1,8 +1,14 @@
+To install the custom Ethereum network run the following: 
+
 ```console
 $ helm install my-eth-pharmaledger stable/ethereum -f values.yaml
 $ kubectl apply -f ethereum-geth-tx-loadbalancer.yaml
 ```
+To delete the deployment run:
 
+```console
+$ helm delete my-eth-pharmaledger
+```
 
 
 ## Configuration
