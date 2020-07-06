@@ -1,5 +1,5 @@
 ```console
-$helm install my-eth-release stable/ethereum -f values.yaml
+$ helm install my-eth-release stable/ethereum -f values.yaml
 ```
 
 
