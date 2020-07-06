@@ -19,7 +19,13 @@ This chart deploys a **private** [Ethereum](https://www.ethereum.org/) network o
 
 ## Prerequisites
 
-* Kubernetes 1.8
+* Kubernetes 1.8 with Helm 3
+
+The stable repositories for Helm need to be added. To do so apply the following command:
+```console
+helm repo add stable https://kubernetes-charts.storage.googleapis.com
+```
+
 
 ## Installing the Chart
 
