@@ -1,5 +1,6 @@
 ```console
 $ helm install my-eth-pharmaledger stable/ethereum -f values.yaml
+$ kubectl apply -f ethereum-geth-tx-loadbalancer.yaml
 ```
 
 
