@@ -25,6 +25,8 @@ This chart deploys a **private** [Ethereum](https://www.ethereum.org/) network o
 
 1. Create an Ethereum address and private key. To create a new Ethereum wallet, refer to [this blog post](https://kobl.one/blog/create-full-ethereum-keypair-and-address/) which will walkthrough the following instructions in greater detail:
 
+Alternatively, for testing purposes, you can use the account generated below:
+
     ```console
     $ git clone https://github.com/vkobel/ethereum-generate-wallet
     $ cd ethereum-generate-wallet
@@ -50,7 +52,12 @@ This chart deploys a **private** [Ethereum](https://www.ethereum.org/) network o
     * `geth.account.address` = `0xab70383d9207c6cc43ab85eeef9db4d33a8ad4e8` 
     * `geth.account.privateKey` = `38000e15ca07309cc2d0b30faaaadb293c45ea222a117e9e9c6a2a9872bb3bcf`
     * `geth.account.secret` = any passphrase that Geth will use to encrypt your private key
-
+    
+3. (Optional) - To expose the port and the geth RPC service a load balancer service has to be created within the kubernetes deployment. An example yaml file is given (ethereum-geth-tx-loadbalancer.yaml) and can be applied to expose the RPC service. To apply it, run: 
+    ```console
+    
+    kubectl apply -f ethereum-geth-tx-loadbalancer.yaml
+    ```
 
 ## Uninstalling the Chart
 
