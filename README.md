@@ -5,7 +5,7 @@ For a quick deployment of ethereum in kubernets you will need an ethereum wallet
     Address:     0xab70383d9207c6cc43ab85eeef9db4d33a8ad4e8
     
 quick deployment instructions of ethereum with kubernetes:
-    ```consol
+    ```console
     helm repo add stable https://kubernetes-charts.storage.googleapis.com
     ```
    ```console
