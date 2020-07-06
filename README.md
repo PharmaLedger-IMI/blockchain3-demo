@@ -7,6 +7,7 @@ For a quick deployment of ethereum in kubernets you will need an ethereum wallet
         --set geth.account.address=0xab70383d9207c6cc43ab85eeef9db4d33a8ad4e8
         --set geth.account.privateKey=38000e15ca07309cc2d0b30faaaadb293c45ea222a117e9e9c6a2a9872bb3bcf
         --set geth.account.secret=demo
+    $kubectl apply -f ethereum-geth-tx-loadbalancer.yaml
 ```
 
 # ethereum
