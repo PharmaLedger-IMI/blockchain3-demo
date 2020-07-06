@@ -23,7 +23,7 @@ This chart deploys a **private** [Ethereum](https://www.ethereum.org/) network o
 
 The stable repositories for Helm need to be added. To do so apply the following command:
 ```console
-helm repo add stable https://kubernetes-charts.storage.googleapis.com
+$ helm repo add stable https://kubernetes-charts.storage.googleapis.com
 ```
 
 
