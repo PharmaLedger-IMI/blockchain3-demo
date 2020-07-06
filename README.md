@@ -31,7 +31,7 @@ helm repo add stable https://kubernetes-charts.storage.googleapis.com
 
 1. Create an Ethereum address and private key. To create a new Ethereum wallet, refer to [this blog post](https://kobl.one/blog/create-full-ethereum-keypair-and-address/) which will walkthrough the following instructions in greater detail:
 
-Alternatively, for testing purposes, you can use the account generated below:
+    Alternatively, for testing purposes, you can use the account generated below:
 
     ```console
     $ git clone https://github.com/vkobel/ethereum-generate-wallet
