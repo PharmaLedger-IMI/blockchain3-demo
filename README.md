@@ -37,7 +37,7 @@ helm install --set env.web3_provider=http://172.20.214.92:8545 --set env.web3_ac
 ```
 
 
-
+## Optional
 ## Configuration
 
 The following table lists the configurable parameters of the vault chart and their default values.
