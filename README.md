@@ -36,9 +36,7 @@ Use `lst7upm` as value of `env.web3_password`.
 helm install --set env.web3_provider=http://172.20.214.92:8545 --set env.web3_account=0x3852360755845889E675C4b683f3F26bf8f12aeA --set env.web3_password=lst7upm anchor-api-ethereum anchor_api/helm-charts/
 ```
 
-
-## Optional
-## Configuration
+## Optional Configuration
 
 The following table lists the configurable parameters of the vault chart and their default values.
 
