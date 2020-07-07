@@ -4,7 +4,7 @@
 ```
 aws eks --region eu-west-2 update-kubeconfig --name pl-cluster3
 ```
-* If you want to deploy your own Kubernetes cluster you can follow this [guideline](k8s_cluster/eks)
+* If you want to deploy your own Kubernetes cluster you can follow this [guideline](https://github.com/PharmaLedger-IMI/blockchain2-demo/k8s_cluster/eks)
 ## Deploy Ethereum network
 Clone our [blockchain3-demo](https://github.com/PharmaLedger-IMI/blockchain3-demo) repo then follow below steps:
 
